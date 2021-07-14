@@ -1,21 +1,129 @@
-#sketch-div {
-	/* position: static; */
-	/* top: 0;
-	right: 0; */
-	/* width: 500px; */
+ul {
+	list-style-type: none;
 }
 
-#overlay {
-	position: absolute;
+#sketch-holder {
+	position: sticky;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(20, 20, 20, 0.5);
-	z-index: 1;
+	z-index: -1;
+	overflow-x: hidden;
 }
 
-#header {
-	position: absolute;
+/* #overlay {
+	position: fixed;
+	top: 50px;
+
+	left: 0;
 	width: 100%;
-	height: 50px;
-	/* background-color: burlywood; */
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(20, 33, 75, 0.739);
+} */
+
+#content {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 1;
+	overflow-y: auto;
+}
+/* TOP CONTAINER  */
+#top-container {
+	box-sizing: border-box;
+	height: 93%;
+	width: 100%;
+	padding: 3%;
+
+	display: flex;
+	justify-content: space-between;
+
+	background-color: rgba(4, 255, 130, 0);
+}
+#top-container-left {
+	height: 40%;
+	width: 30%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	color: white;
+	font-size: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+#contact-button {
+	height: 15%;
+	width: 25%;
+	font-size: 0.8em;
+	border: 1px solid rgb(105, 105, 105);
+	border-radius: 4px;
+}
+#contact-button:hover {
+	box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.2),
+		0 6px 20px 0 rgba(212, 212, 212, 0.19);
+}
+
+#top-container-right {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	color: white;
+	font-size: 1.5em;
+	line-height: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MID CONTAINER  */
+#mid-container {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	padding: 3%;
+
+	display: flex;
+	justify-content: space-between;
+	/* background-color: rgba(0, 4, 22, 0.39); */
+	background-color: rgb(245, 245, 245);
+}
+#mid-container-left {
+	height: 100%;
+	width: 30%;
+	color: rgb(0, 0, 0);
+	font-size: x-large;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	/* background-color: rgba(255, 10, 10, 0.39); */
+}
+/* #mid-container-left img {
+	height: 60%;
+	border-radius: 50%;
+} */
+#mid-container-mid {
+	/* height: 100%;
+	width: 30%; */
+	background-color: rgb(13, 199, 224);
+}
+#mid-container-right {
+	height: 100%;
+	width: 30%;
+	/* background-color: rgba(255, 0, 0, 0.377); */
+}
+
+/* BOTTOM CONTAINER  */
+#bottom-container {
+	height: 500px;
+	width: 50%;
+
+	background-color: rgba(250, 234, 9, 0.356);
 }
