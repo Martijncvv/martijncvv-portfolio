@@ -3,6 +3,11 @@ import Sketch from "react-p5";
 import "../styling/draw-lorenz.css";
 import NavBar from "../components/nav-bar";
 
+import TranspaDashboard from "../images/transpa/Transpa-page-dashboard.png";
+import cryptoExtension from "../images/cryptoextension/CG_Whatsapp_extension_screenshot_VET_USD.png";
+import Cryptofolio from "../images/cryptofolio/cryptofolio_home-page-view_btc.png";
+import chipsAndCircuitsWeb from "../images/chipsAndCircuits/chipsAndCircuitsWeb.png";
+
 function DrawLorenz() {
 	const screenWidth = window.screen.width;
 	const screenHeight = window.screen.height;
@@ -13,8 +18,15 @@ function DrawLorenz() {
 	const a = 10;
 	const b = 24.74;
 	const c = 8 / 3;
+	// const a = 3;
+	// const b = 28;
+	// const c = 8 / 3;
+	// const a = 10;
+	// const b = 28;
+	// const c = 8 / 3;
 
 	let i = 0;
+	let scale = 13;
 
 	const dataPoints = [];
 	let sphere;
@@ -28,6 +40,29 @@ function DrawLorenz() {
 	const testF = () => {
 		console.log("TESTTEST");
 	};
+	document.addEventListener("DOMContentLoaded", function () {
+		let topContainer = document.getElementById("top-container");
+		let bottomContainer = document.getElementById("bottom-container");
+		let footerContainer = document.getElementById("footer-container");
+		let footerButton1 = document.getElementById("button-1");
+		let footerDescription1 = document.getElementById("footer-description-1");
+
+		topContainer.addEventListener("mouseenter", function (event) {
+			scale = 13;
+		});
+		bottomContainer.addEventListener("mouseenter", function (event) {
+			scale = 7;
+			footerDescription1.style.visibility = "hidden";
+		});
+		footerContainer.addEventListener("mouseenter", function (event) {
+			scale = 13;
+		});
+		footerButton1.addEventListener("mouseenter", function (event) {
+			scale = 13;
+
+			footerDescription1.style.visibility = "visible";
+		});
+	});
 
 	const draw = (p5) => {
 		p5.rotateY(i);
@@ -48,11 +83,11 @@ function DrawLorenz() {
 		z += dz;
 
 		dataPoints.push({ x, y, z });
-		if (dataPoints.length > 1000) {
+		if (dataPoints.length > 2500) {
 			dataPoints.shift();
 		}
 
-		p5.scale(13);
+		p5.scale(scale);
 		p5.stroke(247, 247, 247);
 		p5.noFill();
 
@@ -76,10 +111,6 @@ function DrawLorenz() {
 		if (p5.pmouseX == -8.04130748960242 && p5.pmouseY == -8.651822589990463) {
 			testF();
 		}
-		// console.log(p5.pMouseX);
-
-		// console.log(sphere);
-		// console.log(p5.mouseY);
 	};
 
 	return (
@@ -113,25 +144,190 @@ function DrawLorenz() {
 				</div>
 				<div id="mid-container">
 					<div id="mid-container-left">
-						<h1>About me</h1>
+						<div className="mid-container-text">
+							<h1>About</h1>
+							<p>
+								My name is Martijn van Veen, 26 years old and I am interested in
+								technological innovations. This ranges from blockchain
+								technology to artificial intelligence, and from apps that track
+								body data to the third industrial revolution.
+								<br /> <br /> In my free time I like to create (educational)
+								content on social media about various blockchain projects.
+								Currently I’m developing myself to be able to work as a
+								developer at an innovative and open-minded company.
+							</p>
+						</div>
 					</div>
-					{/* <div id="mid-container-mid"></div> */}
+
 					<div id="mid-container-right">
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-							type and scrambled it to make a type specimen book.{" "}
-						</p>
+						<div className="mid-container-text">
+							<h1>Me</h1>
+							<div id="mid-container-right-content">
+								<div className="mid-container-right-box">
+									<ul>
+										<li>Stacks</li>
+										<li>Javascript</li>
+										<li>React</li>
+										<li>Redux</li>
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>SQL</li>
+										<li>Python</li>
+									</ul>
+								</div>
+								<div className="mid-container-right-box">
+									<ul>
+										<li>Hobbies</li>
+										<li>Fitness</li>
+										<li>Reading</li>
+										<li>Travelling</li>
+										<li>Playing Guitar</li>
+									</ul>
+								</div>
+								<div className="mid-container-right-box">
+									<ul>
+										<li>Interests</li>
+										<li>Cryptocurrencies</li>
+										<li>Sustainability</li>
+										<li>Philosophy</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div id="bottom-container">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type
-						and scrambled it to make a type specimen book.{" "}
-					</p>
+					<div id="bottom-container-left">
+						<div className="bottom-container-box">
+							<div>
+								<h3>Transpa Product Transparency Platform</h3>
+								<p>
+									A platform where SMB's can create pages for products they sell
+									to increase product transparency; Connecting business and
+									customer by communicating through the product.
+								</p>
+								<p className="bottom-container-stacks">
+									Javascript, React, Redux, Sequalize, HTML, CSS
+								</p>
+								<a
+									href="https://github.com/Martijncvv/transpa_frontend"
+									target="_blank"
+								>
+									<h4>Github</h4>
+								</a>
+							</div>
+							<div className="bottom-container-images">
+								<img
+									className="bottom-container-image"
+									src={TranspaDashboard}
+									alt="Transpa Dashboard"
+								/>
+							</div>
+						</div>
+
+						<div className="bottom-container-box">
+							<div>
+								<h3>Cryptocurrency Google Chrome Extension</h3>
+								<p>
+									A Google Chrome extension which displays information about a
+									cryptocurrency in a popup when the user selects a coin ticker
+									(BTC/ ETH) and presses CTRL+SHIFT+F.
+								</p>
+								<p className="bottom-container-stacks">Javascript, HTML, CSS</p>
+								<a
+									href="https://github.com/Martijncvv/cryptocurrency_chrome_extension"
+									target="_blank"
+								>
+									<h4>Github</h4>
+								</a>
+							</div>
+							<div className="bottom-container-images">
+								<img
+									className="bottom-container-image"
+									src={cryptoExtension}
+									alt="Crypto Chrome Extension"
+								/>
+							</div>
+						</div>
+					</div>
+					<div id="bottom-container-right">
+						<div className="bottom-container-box">
+							<div>
+								<h3>Cryptofolio</h3>
+								<p>
+									A clean cryptocurrency portfolio tracker that shows price
+									data, social media data and has the functionality to explore
+									new investment opportunities.
+								</p>
+								<p className="bottom-container-stacks">
+									Python, Django, Javascript, HTML, CSS
+								</p>
+								<a
+									href="https://github.com/Martijncvv/cryptocurrency_portfolio_project"
+									target="_blank"
+								>
+									<h4>Github</h4>
+								</a>
+							</div>
+							<div className="bottom-container-images">
+								<img
+									className="bottom-container-image"
+									src={Cryptofolio}
+									alt="Cryptofolio Dashboard"
+								/>
+							</div>
+						</div>
+						<div className="bottom-container-box">
+							<div>
+								<h3>Chips and Circuits</h3>
+								<p>
+									An algorithm that is able to find an optimal routing of wires
+									connecting several (uniform) logic-gates that form a
+									hypothetical microchip.
+								</p>
+								<p className="bottom-container-stacks">
+									Python, Javascript, HTML, CSS
+								</p>
+								<a
+									href="https://github.com/Martijncvv/chips_and_circuits"
+									target="_blank"
+								>
+									<h4>Github</h4>
+								</a>
+							</div>
+							<div className="bottom-container-images">
+								<img
+									className="bottom-container-image"
+									src={chipsAndCircuitsWeb}
+									alt="Chips and Circuits Dashboard"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer-container">
+					<div id="footer-container-left">
+						<div
+							id="footer-description-1"
+							className="footer-container-description"
+						>
+							<p>Butterfly Effect</p>
+							<p>
+								In chaos theory, the butterfly effect is the sensitive
+								dependence on initial conditions in which a small change in one
+								state of a deterministic nonlinear system can result in large
+								differences in a later state.
+							</p>
+							<p>
+								The term butterfly effect comes from an analogy where a
+								butterfly flaps its wings in Tokyo and a tornado occurs in
+								Tennessee.
+							</p>
+						</div>
+						<div className="footer-container-button" id="button-1"></div>
+					</div>
+
+					<div id="footer-container-right"></div>
 				</div>
 			</div>
 		</>
