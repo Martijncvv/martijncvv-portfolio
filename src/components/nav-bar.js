@@ -4,7 +4,7 @@ import "./nav-bar.css";
 function NavBar() {
 	return (
 		<div id="header">
-			<p>Martijn van Veen</p>
+			<p>McvV</p>
 		</div>
 	);
 }
