@@ -35,10 +35,10 @@ function DrawLorenz() {
 	let scale = 11;
 	let sketchPlacement = 4.5;
 	let desktop = true;
-
+	// console.log(screenHeight);
 	// MOBILE
 	if (screenWidth <= 600) {
-		scale = 6;
+		scale = screenHeight / 150;
 		sketchPlacement = 4.5;
 		desktop = false;
 	}
