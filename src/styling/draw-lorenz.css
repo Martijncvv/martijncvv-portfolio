@@ -92,7 +92,7 @@ img:focus {
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 3rem 0.5rem;
+	padding: 1rem 0.5rem 1.5rem;
 	text-align: justify;
 }
 .container-element {
@@ -102,7 +102,7 @@ img:focus {
 }
 
 .fullWindow-container {
-	min-height: calc(100% - 5rem);
+	min-height: calc(100% - 4rem);
 }
 
 .mid-element {
