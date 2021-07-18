@@ -250,7 +250,9 @@ function DrawLorenz() {
 						</div>
 					</div>
 
-					<div className="mid-element"></div>
+					<div className="mid-element">
+						<p></p>
+					</div>
 
 					<div className="container-element right-element">
 						<h2>Butterfly Effect</h2>
