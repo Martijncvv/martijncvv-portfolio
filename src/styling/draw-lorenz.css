@@ -155,6 +155,7 @@ img:focus {
 	}
 	.container {
 		flex-direction: column;
+		justify-content: space-between;
 	}
 	.container-element {
 		width: 100%;
