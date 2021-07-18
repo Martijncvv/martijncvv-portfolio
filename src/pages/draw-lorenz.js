@@ -30,10 +30,18 @@ function DrawLorenz() {
 	// const c = 8 / 3;
 
 	let i = 0;
+
 	// DESKTOP
-	// let scale = 13;
+	let scale = 11;
+	let sketchPlacement = 4.5;
+	let desktop = true;
+
 	// MOBILE
-	let scale = 6;
+	if (screenWidth <= 600) {
+		scale = 6;
+		sketchPlacement = 4.5;
+		desktop = false;
+	}
 
 	const dataPoints = [];
 
@@ -63,7 +71,7 @@ function DrawLorenz() {
 		p5.rotateZ(1.7);
 
 		console.log("window.screen.height", window.screen.height);
-		p5.translate(0, 0, -(window.screen.height / 5));
+		p5.translate(0, 0, -(window.screen.height / sketchPlacement));
 
 		i += 0.003;
 		p5.background(4, 30, 69);
@@ -99,17 +107,12 @@ function DrawLorenz() {
 			<div id="sketch-holder"></div>
 
 			<div className="main">
-				<NavBar />
-				<div
-					id="first-container"
-					className="container flex-wrap-between fc-100"
-				>
+				{desktop && <NavBar />}
+
+				<div className="container fullWindow-container  flex-wrap-between fc-100">
 					<div className="container-element">
 						<h1>Martijn van Veen</h1>
 						<h2>Full Stack Developer</h2>
-						<a href="#" target="_blank">
-							Contact me
-						</a>
 					</div>
 
 					<div className="container-element right-element">
@@ -169,19 +172,32 @@ function DrawLorenz() {
 						</div>
 					</div>
 				</div>
-				<div className="container">
-					<div>
+				<div className="container flex-wrap-between bgc-900 ">
+					<div className="container-element flex-center">
 						<Card
-							title="Transpa Transparency Platform"
-							text="A platform where SMB's can create pages for products they sell
-						to increase product transparency; Connecting business and
+							title="Transpa Platform"
+							text="A platform where SMB's can create pages to increase product transparency; Connecting business and
 						customer by communicating through the product."
 							stacks="Javascript, React, Redux, Sequalize, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/transpa_frontend"
 							background={transpaDashboard}
 						/>
+					</div>
+
+					<div className="container-element flex-center">
 						<Card
-							title="Cryptocurrency Ticker Extension"
+							title="Cryptofolio"
+							text="A cryptocurrency portfolio tracker that shows price
+						data, social media data and has the functionality to explore
+						new investment opportunities within the industry."
+							stacks="Python, Django, Javascript, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/cryptocurrency_portfolio_project"
+							background={cryptofolio}
+						/>
+					</div>
+					<div className="container-element flex-center">
+						<Card
+							title="Cryptoticker Extension"
 							text="A Google Chrome extension which displays information about a
 						cryptocurrency in a popup when the user selects a coin ticker
 						(BTC/ ETH) and presses CTRL+SHIFT+F."
@@ -190,16 +206,8 @@ function DrawLorenz() {
 							background={cryptoExtension}
 						/>
 					</div>
-					<div>
-						<Card
-							title="Cryptofolio"
-							text="A clean cryptocurrency portfolio tracker that shows (historical) price
-						data, social media data and has the functionality to explore
-						new investment opportunities within the cryptocurrency industry."
-							stacks="Python, Django, Javascript, HTML, CSS"
-							GHLink="https://github.com/Martijncvv/cryptocurrency_portfolio_project"
-							background={cryptofolio}
-						/>
+
+					<div className="container-element flex-center">
 						<Card
 							title="Chips and Circuits"
 							text="An algorithm that is able to find an optimal routing of wires
@@ -212,7 +220,7 @@ function DrawLorenz() {
 					</div>
 				</div>
 
-				<div className="container flex-wrap-between fc-100">
+				<div className="container fullWindow-container  flex-wrap-between fc-100">
 					<div className="container-element">
 						<h1>Contact</h1>
 						<div id="contact">
@@ -230,6 +238,8 @@ function DrawLorenz() {
 						</div>
 					</div>
 
+					<div className="mid-element"></div>
+
 					<div className="container-element right-element">
 						<h2>Butterfly Effect</h2>
 						<p>
@@ -238,10 +248,13 @@ function DrawLorenz() {
 							deterministic nonlinear system can result in large differences in
 							a later state.
 						</p>
-						<p>
-							The term butterfly effect comes from an analogy where a butterfly
-							flaps its wings in Tokyo and a tornado occurs in Tennessee.
-						</p>
+						{desktop && (
+							<p>
+								The term butterfly effect comes from an analogy where a
+								butterfly flaps its wings in Tokyo and a tornado occurs in
+								Tennessee.
+							</p>
+						)}
 					</div>
 				</div>
 			</div>

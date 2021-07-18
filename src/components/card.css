@@ -1,6 +1,9 @@
 .card {
-	width: 50ch;
-	padding: 6rem 0 0;
+	/* width: 40ch; */
+	/* width: 100%; */
+	max-width: 40ch;
+	/* height: 20rem; */
+	padding: 5.5rem 0 0;
 	background-size: cover;
 	border-radius: 6px;
 	overflow: hidden;
@@ -13,10 +16,11 @@
 }
 
 .card-content {
-	padding: 1.5rem;
+	padding: 0 1rem;
+
 	background: linear-gradient(
 		rgba(0, 0, 0, 0),
-		rgba(0, 0, 0, 0.5) 20%,
+		rgba(0, 0, 0, 0.5) 15%,
 		rgba(0, 0, 0, 0.7) 35%,
 		rgba(0, 0, 0, 0.9)
 	);
@@ -24,9 +28,11 @@
 
 .card-title {
 	width: max-content;
+	padding-top: 2rem;
 	padding-bottom: 3px;
 	position: relative;
 	color: white;
+	font-size: 2rem;
 }
 
 .card-title::after {
@@ -49,20 +55,27 @@
 }
 
 .card-body {
+	min-height: 9ch;
+	margin: 1rem 0 0.5rem;
 	color: rgb(255, 255, 255, 0.9);
+	font-size: 1.3rem;
 	text-align: justify;
 }
 .card-stacks {
+	margin-bottom: 2rem;
 	color: rgb(255, 255, 255, 0.9);
+	font-size: 1.3rem;
 	font-style: italic;
 }
 
 .card-button {
-	padding: 0.5em 1.25em;
+	margin-bottom: 2rem;
+	padding: 0.5rem 1rem;
 	display: inline-block;
 	border-radius: 5px;
 	background-color: white;
 	color: rgb(4, 30, 69);
+	font-size: 1.2rem;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -74,7 +87,13 @@
 
 @media (hover) {
 	.card-content {
-		transform: translateY(65%);
+		/* background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.5) %,
+			rgba(0, 0, 0, 0.7) 35%,
+			rgba(0, 0, 0, 0.9)
+		); */
+		transform: translateY(15rem);
 		transition: transform 500ms ease;
 	}
 

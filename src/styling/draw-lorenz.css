@@ -80,7 +80,7 @@ img:focus {
 
 .main {
 	position: absolute;
-	top: 5rem;
+	/* top: 5rem; */
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -91,18 +91,26 @@ img:focus {
 
 .container {
 	box-sizing: border-box;
-	min-height: calc(100% - 5rem);
 	width: 100%;
-	padding: 2rem 0.5rem;
+	padding: 3rem 0.5rem;
 	text-align: justify;
 }
 .container-element {
 	box-sizing: border-box;
-	width: clamp(25%, 50%, 50%);
-	padding: 1% 9%;
+	width: clamp(25%, 48%, 50%);
+	padding: 2rem;
 }
+
+.fullWindow-container {
+	min-height: calc(100% - 5rem);
+}
+
+.mid-element {
+	width: 4%;
+}
+
 .right-element {
-	padding: 1% 9%;
+	padding: 1rem 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -113,15 +121,30 @@ img:focus {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
-#first-container {
-	height: calc(100% - 5rem);
+.flex-center {
+	display: flex;
+	justify-content: center;
 }
 
 #contact {
-	padding: 3rem;
+	padding: 1rem 20%;
 	display: flex;
 	justify-content: space-around;
+}
+
+#contact-button {
+	padding: 0.5em 1em;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: white;
+	color: rgb(4, 30, 69);
+	font-size: medium;
+	text-decoration: none;
+	cursor: pointer;
+}
+#contact-button:hover {
+	box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.2),
+		0 6px 20px 0 rgba(212, 212, 212, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -133,5 +156,8 @@ img:focus {
 	}
 	.container-element {
 		width: 100%;
+	}
+	.fullWindow-container {
+		min-height: 100%;
 	}
 }
