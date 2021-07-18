@@ -92,13 +92,13 @@ img:focus {
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 1rem 0.5rem 1.5rem;
+	padding: 0.5rem 0.5rem 0.5rem;
 	text-align: justify;
 }
 .container-element {
 	box-sizing: border-box;
 	width: clamp(25%, 48%, 50%);
-	padding: 2rem;
+	padding: 1rem;
 }
 
 .fullWindow-container {
