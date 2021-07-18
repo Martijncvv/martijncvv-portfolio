@@ -224,16 +224,28 @@ function DrawLorenz() {
 					<div className="container-element">
 						<h1>Contact</h1>
 						<div id="contact">
-							<a href="https://github.com/Martijncvv" target="_blank">
-								<img src={githubLogo} />
+							<a
+								href="https://github.com/Martijncvv"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img alt="github logo" src={githubLogo} />
 							</a>
 
-							<a href="https://www.linkedin.com/in/martijncvv/" target="_blank">
-								<img src={linkedinLogo} />
+							<a
+								href="https://www.linkedin.com/in/martijncvv/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img alt="linkedin logo" src={linkedinLogo} />
 							</a>
 
-							<a href="https://twitter.com/Martijncvv" target="_blank">
-								<img src={twitterLogo} />
+							<a
+								href="https://twitter.com/Martijncvv"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img alt="twitter logo" src={twitterLogo} />
 							</a>
 						</div>
 					</div>

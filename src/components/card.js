@@ -12,7 +12,12 @@ function Card(props) {
 				<p className="card-body">{props.text}</p>
 				<p className="card-stacks">{props.stacks}</p>
 
-				<a href={props.GHLink} target="_blank" className="card-button">
+				<a
+					href={props.GHLink}
+					className="card-button"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Details
 				</a>
 			</div>
