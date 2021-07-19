@@ -92,7 +92,7 @@ img:focus {
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0.5rem 0.5rem 0.5rem;
+	padding: 2rem 0.5rem 3rem;
 	text-align: justify;
 }
 .container-element {
@@ -151,11 +151,10 @@ img:focus {
 
 @media only screen and (max-width: 600px) {
 	:root {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.container {
 		flex-direction: column;
-		justify-content: space-between;
 	}
 	.container-element {
 		width: 100%;

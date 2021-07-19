@@ -38,8 +38,8 @@ function DrawLorenz() {
 	// console.log(screenHeight);
 	// MOBILE
 	if (screenWidth <= 600) {
-		scale = screenHeight / 200;
-		sketchPlacement = 4.5;
+		scale = screenHeight / 150;
+		sketchPlacement = screenHeight / 130;
 		desktop = false;
 	}
 
@@ -140,7 +140,7 @@ function DrawLorenz() {
 						</p>
 					</div>
 
-					<div className="container-element ">
+					<div className="container-element">
 						<h1>Me</h1>
 						<div>
 							<div className="flex-wrap-between">
