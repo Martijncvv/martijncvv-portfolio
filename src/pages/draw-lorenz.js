@@ -74,7 +74,7 @@ function DrawLorenz() {
 
 		i += 0.003;
 		// p5.background(4, 30, 69);
-		p5.background(110, 130, 169);
+		p5.background(210, 130, 9);
 
 		let dt = 0.01;
 		let dx = a * (y - x) * dt;
