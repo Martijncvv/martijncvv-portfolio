@@ -92,7 +92,8 @@ img:focus {
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 0.5rem 4rem;
+
+	padding: 1rem 0.5rem 3rem;
 	text-align: justify;
 }
 .container-element {
@@ -128,6 +129,9 @@ img:focus {
 	justify-content: center;
 }
 
+#about {
+	padding: 1rem 0.5rem 8rem;
+}
 #contact {
 	padding: 1rem 20%;
 	display: flex;

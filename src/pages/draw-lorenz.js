@@ -125,7 +125,7 @@ function DrawLorenz() {
 				</div>
 
 				<div className="container flex-wrap-between bgc-100 ">
-					<div className="container-element">
+					<div id="about" className="container-element">
 						<h1>About</h1>
 						<p>
 							My name is Martijn van Veen, 26 years old and I am interested in
@@ -153,7 +153,7 @@ function DrawLorenz() {
 									<li>SQL</li>
 									<li>Python</li>
 								</ul>
-								<p></p>
+
 								<ul>
 									<h3>Hobbies</h3>
 									<li>Fitness</li>
@@ -200,7 +200,7 @@ function DrawLorenz() {
 							title="Cryptoticker Extension"
 							text="A Google Chrome extension which displays information about a
 						cryptocurrency in a popup when the user selects a coin ticker
-						(BTC/ ETH) and presses CTRL+SHIFT+F."
+						(BTC/ ETH) and presses the shortkeys."
 							stacks="Javascript, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/cryptocurrency_chrome_extension"
 							background={cryptoExtension}
