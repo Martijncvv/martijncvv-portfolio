@@ -33,20 +33,20 @@ function DrawLorenz() {
 
 	// DESKTOP
 	let scale = 11;
-	let sketchPlacement = 4.5;
+	let sketchPlacement = screenHeight / 4.5;
 	let desktop = true;
 	// console.log(screenHeight);
 	// MOBILE
 	if (screenWidth <= 600) {
 		scale = screenHeight / 160;
-		sketchPlacement = screenHeight / 80;
+		sketchPlacement = screenHeight / 150;
 		desktop = false;
 	}
 
 	const dataPoints = [];
 
 	const setup = (p5) => {
-		const canvas = p5.createCanvas(screenWidth, screenHeight * 0.9, p5.WEBGL);
+		const canvas = p5.createCanvas(screenWidth, screenHeight, p5.WEBGL);
 		canvas.parent("sketch-holder");
 	};
 
@@ -70,10 +70,11 @@ function DrawLorenz() {
 		p5.rotateX(1.6);
 		p5.rotateZ(1.7);
 
-		p5.translate(0, 0, -(window.screen.height / sketchPlacement));
+		p5.translate(0, 0, -sketchPlacement);
 
 		i += 0.003;
-		p5.background(4, 30, 69);
+		// p5.background(4, 30, 69);
+		p5.background(255, 30, 69);
 
 		let dt = 0.01;
 		let dx = a * (y - x) * dt;
