@@ -39,7 +39,7 @@ function DrawLorenz() {
 	// MOBILE
 	if (screenWidth <= 600) {
 		scale = screenHeight / 160;
-		sketchPlacement = screenHeight / 130;
+		sketchPlacement = screenHeight / 90;
 		desktop = false;
 	}
 
@@ -172,6 +172,7 @@ function DrawLorenz() {
 						</div>
 					</div>
 				</div>
+
 				<div className="container flex-wrap-between bgc-900 ">
 					<div className="container-element flex-center">
 						<Card
