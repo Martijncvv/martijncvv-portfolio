@@ -13,8 +13,8 @@ import twitterLogo from "../images/socialMedia/twitterLogo.png";
 import linkedinLogo from "../images/socialMedia/linkedinLogo.png";
 
 function DrawLorenz() {
-	const screenWidth = window.screen.width;
-	const screenHeight = window.screen.height;
+	const screenWidth = window.innerWidth;
+	const screenHeight = window.innerHeight;
 
 	let x = 0.01;
 	let y = 0;
@@ -39,7 +39,7 @@ function DrawLorenz() {
 	// MOBILE
 	if (screenWidth <= 600) {
 		scale = screenHeight / 160;
-		sketchPlacement = screenHeight / 90;
+		sketchPlacement = screenHeight / 80;
 		desktop = false;
 	}
 
@@ -70,7 +70,6 @@ function DrawLorenz() {
 		p5.rotateX(1.6);
 		p5.rotateZ(1.7);
 
-		console.log("window.screen.height", window.screen.height);
 		p5.translate(0, 0, -(window.screen.height / sketchPlacement));
 
 		i += 0.003;
