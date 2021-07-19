@@ -39,7 +39,7 @@ function DrawLorenz() {
 	// MOBILE
 	if (screenWidth <= 600) {
 		scale = screenHeight / 160;
-		sketchPlacement = screenHeight / 100;
+		sketchPlacement = screenHeight / 80;
 		desktop = false;
 	}
 
@@ -74,7 +74,7 @@ function DrawLorenz() {
 
 		i += 0.003;
 		// p5.background(4, 30, 69);
-		p5.background(0, 30, 69);
+		p5.background(0, 130, 69);
 
 		let dt = 0.01;
 		let dx = a * (y - x) * dt;
