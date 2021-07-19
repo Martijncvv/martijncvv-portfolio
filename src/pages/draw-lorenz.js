@@ -38,7 +38,7 @@ function DrawLorenz() {
 	// console.log(screenHeight);
 	// MOBILE
 	if (screenWidth <= 600) {
-		scale = screenHeight / 150;
+		scale = screenHeight / 160;
 		sketchPlacement = screenHeight / 130;
 		desktop = false;
 	}
@@ -250,7 +250,7 @@ function DrawLorenz() {
 						</div>
 					</div>
 
-					<div className="mid-element">
+					<div className="container-element mid-element">
 						<p></p>
 					</div>
 
