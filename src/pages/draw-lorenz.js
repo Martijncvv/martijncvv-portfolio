@@ -125,7 +125,7 @@ function DrawLorenz() {
 				</div>
 
 				<div id="about" className="container flex-wrap-between bgc-100 ">
-					<div id="about" className="container-element">
+					<div className="container-element">
 						<h1>About</h1>
 						<p>
 							My name is Martijn van Veen, 26 years old and I am interested in
