@@ -2,8 +2,9 @@
 	/* width: 40ch; */
 	/* width: 100%; */
 	max-width: 40ch;
-	/* height: 20rem; */
+
 	padding: 5.5rem 0 0;
+	margin: 3rem 0 0;
 	background-size: cover;
 	border-radius: 6px;
 	overflow: hidden;
