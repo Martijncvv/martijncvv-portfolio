@@ -12,6 +12,18 @@ import githubLogo from "../images/socialMedia/githubLogo.png";
 import twitterLogo from "../images/socialMedia/twitterLogo.png";
 import linkedinLogo from "../images/socialMedia/linkedinLogo.png";
 
+import htmlLogo from "../images/stacks/html.png";
+import cssLogo from "../images/stacks/css.png";
+import jsLogo from "../images/stacks/javascript.png";
+import reactLogo from "../images/stacks/react.png";
+import reduxLogo from "../images/stacks/redux.png";
+import nodejsLogo from "../images/stacks/nodejs.png";
+import expressLogo from "../images/stacks/express.png";
+import sequalizeLogo from "../images/stacks/sequalize.png";
+import pythonLogo from "../images/stacks/python-original.svg";
+import githubStackLogo from "../images/stacks/github.png";
+import vscLogo from "../images/stacks/visual-studio-code.png";
+
 function DrawLorenz() {
 	const screenWidth = window.innerWidth;
 	const screenHeight = window.innerHeight;
@@ -107,7 +119,6 @@ function DrawLorenz() {
 
 			<div className="main">
 				{desktop && <NavBar />}
-
 				<div className="container fullWindow-container  flex-wrap-between fc-100">
 					<div className="container-element">
 						<h1>Martijn van Veen</h1>
@@ -123,7 +134,6 @@ function DrawLorenz() {
 						</p>
 					</div>
 				</div>
-
 				<div id="about" className="container flex-wrap-between bgc-100 ">
 					<div className="container-element">
 						<h1>About</h1>
@@ -143,30 +153,45 @@ function DrawLorenz() {
 						<h1>Me</h1>
 						<div>
 							<div className="flex-wrap-between">
-								<ul>
+								<div className="stack-div">
 									<h3>Stacks</h3>
-									<li>Javascript</li>
-									<li>React</li>
-									<li>Redux</li>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>SQL</li>
-									<li>Python</li>
-								</ul>
-
-								<ul>
+									<div>
+										<img alt="js logo" src={jsLogo} />
+										<img alt="html logo" src={htmlLogo} />
+										<img alt="css logo" src={cssLogo} />
+									</div>
+									<div>
+										<img alt="react logo" src={reactLogo} />
+										<img alt="redux logo" src={reduxLogo} />
+										<img alt="nodejs logo" src={nodejsLogo} />
+									</div>
+									<div>
+										<img alt="pythonLogo logo" src={pythonLogo} />
+										<img alt="express logo" src={expressLogo} />
+										<img alt="sequalize logo" src={sequalizeLogo} />
+									</div>
+									<div>
+										<img alt="visual studio code logo" src={vscLogo} />
+										<img alt="github logo" src={githubStackLogo} />
+									</div>
+								</div>
+								<div>
 									<h3>Hobbies</h3>
-									<li>Fitness</li>
-									<li>Reading</li>
-									<li>Travelling</li>
-									<li>Playing Guitar</li>
-								</ul>
-								<ul>
+									<ul>
+										<li>Fitness</li>
+										<li>Reading</li>
+										<li>Travelling</li>
+										<li>Playing Guitar</li>
+									</ul>
+								</div>
+								<div>
 									<h3>Interests</h3>
-									<li>Cryptocurrencies</li>
-									<li>Sustainability</li>
-									<li>Philosophy</li>
-								</ul>
+									<ul>
+										<li>Cryptocurrencies</li>
+										<li>Sustainability</li>
+										<li>Philosophy</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -219,7 +244,6 @@ function DrawLorenz() {
 						/>
 					</div>
 				</div>
-
 				<div className="container fullWindow-container  flex-wrap-between fc-100">
 					<div className="container-element">
 						<h1>Contact</h1>
