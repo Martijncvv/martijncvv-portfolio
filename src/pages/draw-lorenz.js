@@ -172,7 +172,7 @@ function DrawLorenz() {
 					</div>
 				</div>
 
-				<div className="container flex-wrap-between bgc-900 ">
+				<div id="myWorks" className="container flex-wrap-between bgc-900 ">
 					<div className="container-element flex-center">
 						<Card
 							title="Transpa Platform"
@@ -223,7 +223,7 @@ function DrawLorenz() {
 				<div className="container fullWindow-container  flex-wrap-between fc-100">
 					<div className="container-element">
 						<h1>Contact</h1>
-						<div id="contact">
+						<div id="socials">
 							<a
 								href="https://github.com/Martijncvv"
 								target="_blank"
