@@ -132,7 +132,7 @@ img:focus {
 	padding-bottom: 1rem;
 }
 .stack-div img {
-	padding: 0.5rem 1.5rem 0.5rem 0;
+	padding: 0.5rem 1.5rem 0.4rem 0;
 }
 
 #aboutMe {
@@ -215,6 +215,6 @@ img:focus {
 	}
 	.stack-div img {
 		padding: 1rem;
-		width: 17%;
+		width: 15%;
 	}
 }
