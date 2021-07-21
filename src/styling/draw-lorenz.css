@@ -44,7 +44,7 @@ h2 {
 	font-size: 2.5rem;
 }
 h3 {
-	font-size: 1.7rem;
+	font-size: 2rem;
 }
 ul {
 	padding: 1rem;
@@ -132,10 +132,10 @@ img:focus {
 	padding-bottom: 1rem;
 }
 .stack-div img {
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1.5rem 0.5rem 0;
 }
 
-#about {
+#aboutMe {
 	padding: 1rem 0.5rem 8rem;
 }
 #myWorks {
@@ -169,6 +169,10 @@ img:focus {
 	h1 {
 		padding: 1rem, 1.5rem 0.5rem;
 	}
+	h3 {
+		font-size: 2.5rem;
+		padding: 0.5rem;
+	}
 	.container {
 		flex-direction: column;
 		padding: 0 0.5rem 2rem;
@@ -180,7 +184,48 @@ img:focus {
 		margin-top: 0;
 		min-height: 100%;
 	}
-	#about {
+	.flex-column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#aboutMe {
 		padding: 1rem 0.5rem 3rem;
 	}
+
+	#me {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#me > div {
+		padding-bottom: 2rem;
+	}
+
+	.stack-div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1rem;
+	}
+	.stack-div > div > div {
+		display: flex;
+		justify-content: center;
+	}
+	.stack-div img {
+		padding: 0.5rem 1.5rem 0.5rem 0;
+		width: 15%;
+	}
+
+	/* #hobbies {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#interests {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	} */
 }

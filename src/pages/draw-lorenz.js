@@ -134,7 +134,7 @@ function DrawLorenz() {
 						</p>
 					</div>
 				</div>
-				<div id="about" className="container flex-wrap-between bgc-100 ">
+				<div id="aboutMe" className="container flex-wrap-between bgc-100 ">
 					<div className="container-element">
 						<h1>About</h1>
 						<p>
@@ -151,10 +151,11 @@ function DrawLorenz() {
 
 					<div className="container-element">
 						<h1>Me</h1>
-						<div>
-							<div className="flex-wrap-between">
-								<div className="stack-div">
-									<h3>Stacks</h3>
+
+						<div id="me" className="flex-wrap-between">
+							<div className="stack-div ">
+								<h3>Stacks</h3>
+								<div>
 									<div>
 										<img alt="js logo" src={jsLogo} />
 										<img alt="html logo" src={htmlLogo} />
@@ -175,23 +176,22 @@ function DrawLorenz() {
 										<img alt="github logo" src={githubStackLogo} />
 									</div>
 								</div>
-								<div>
-									<h3>Hobbies</h3>
-									<ul>
-										<li>Fitness</li>
-										<li>Reading</li>
-										<li>Travelling</li>
-										<li>Playing Guitar</li>
-									</ul>
-								</div>
-								<div>
-									<h3>Interests</h3>
-									<ul>
-										<li>Cryptocurrencies</li>
-										<li>Sustainability</li>
-										<li>Philosophy</li>
-									</ul>
-								</div>
+							</div>
+
+							<div id="hobbies" className="flex-column">
+								<h3>Hobbies</h3>
+
+								<p>Fitness</p>
+								<p>Reading</p>
+								<p>Travelling</p>
+								<p>Playing Guitar</p>
+							</div>
+							<div id="interests" className="flex-column">
+								<h3>Interests</h3>
+
+								<p>Cryptocurrencies</p>
+								<p>Sustainability</p>
+								<p>Philosophy</p>
 							</div>
 						</div>
 					</div>
