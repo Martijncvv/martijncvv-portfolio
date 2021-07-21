@@ -34,12 +34,6 @@ function Home() {
 	const a = 10;
 	const b = 24.74;
 	const c = 8 / 3;
-	// const a = 3;
-	// const b = 28;
-	// const c = 8 / 3;
-	// const a = 10;
-	// const b = 28;
-	// const c = 8 / 3;
 
 	let i = 0;
 
@@ -47,7 +41,7 @@ function Home() {
 	let scale = 11;
 	let sketchPlacement = screenHeight / 4.5;
 	let desktop = true;
-	// console.log(screenHeight);
+
 	// MOBILE
 	if (screenWidth <= 600) {
 		scale = screenHeight / 160;
@@ -61,21 +55,6 @@ function Home() {
 		const canvas = p5.createCanvas(screenWidth, screenHeight, p5.WEBGL);
 		canvas.parent("sketch-holder");
 	};
-
-	document.addEventListener("DOMContentLoaded", function () {
-		// let topContainer = document.getElementById("top-container");
-		// let bottomContainer = document.getElementById("bottom-container");
-		// let footerContainer = document.getElementById("footer-container");
-		// topContainer.addEventListener("mouseenter", function (event) {
-		// 	scale = 13;
-		// });
-		// bottomContainer.addEventListener("mouseenter", function (event) {
-		// 	scale = 11;
-		// });
-		// footerContainer.addEventListener("mouseenter", function (event) {
-		// 	scale = 11;
-		// });
-	});
 
 	const draw = (p5) => {
 		p5.rotateY(i);
