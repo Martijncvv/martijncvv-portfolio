@@ -1,6 +1,6 @@
 import React from "react";
 import Sketch from "react-p5";
-import "../styling/draw-lorenz.css";
+import "../styling/home.css";
 import NavBar from "../components/nav-bar";
 import Card from "../components/card";
 
@@ -24,7 +24,7 @@ import pythonLogo from "../images/stacks/python-original.svg";
 import githubStackLogo from "../images/stacks/github.png";
 import vscLogo from "../images/stacks/visual-studio-code.png";
 
-function DrawLorenz() {
+function Home() {
 	const screenWidth = window.innerWidth;
 	const screenHeight = window.innerHeight;
 
@@ -300,4 +300,4 @@ function DrawLorenz() {
 	);
 }
 
-export default DrawLorenz;
+export default Home;

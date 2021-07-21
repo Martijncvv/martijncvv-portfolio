@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import DrawLorenz from "./pages/draw-lorenz.js";
+import HomePage from "./pages/home.js";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<DrawLorenz />
+		<HomePage />
 	</React.StrictMode>,
 	document.getElementById("root")
 );
