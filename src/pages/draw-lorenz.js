@@ -178,7 +178,7 @@ function DrawLorenz() {
 								</div>
 							</div>
 
-							<div id="hobbies" className="flex-column">
+							<div className="flex-column">
 								<h3>Hobbies</h3>
 
 								<p>Fitness</p>
@@ -186,7 +186,7 @@ function DrawLorenz() {
 								<p>Travelling</p>
 								<p>Playing Guitar</p>
 							</div>
-							<div id="interests" className="flex-column">
+							<div className="flex-column">
 								<h3>Interests</h3>
 
 								<p>Cryptocurrencies</p>
