@@ -1,12 +1,8 @@
-import React from "react";
-import "./nav-bar.css";
+import React from 'react'
+import './nav-bar.css'
 
 function NavBar() {
-	return (
-		<div id="header">
-			<p>McvV</p>
-		</div>
-	);
+	return <div id="header">{/* <p>McvV</p> */}</div>
 }
 
-export default NavBar;
+export default NavBar

@@ -2,7 +2,7 @@
 	--clr-primary-100: rgb(255, 255, 255);
 	--clr-primary-900: rgb(4, 30, 69);
 
-	--ff-primary: "Roboto", sans-serif;
+	--ff-primary: 'Roboto', sans-serif;
 	font-size: 16px;
 }
 .bgc-100 {
@@ -63,8 +63,10 @@ img {
 }
 img:hover,
 img:focus {
+	background: rgba(255, 255, 255, 0);
 	box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.2),
 		0 6px 20px 0 rgba(212, 212, 212, 0.19);
+	border-radius: 50%;
 }
 
 #sketch-holder {

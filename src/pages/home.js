@@ -8,10 +8,12 @@ import transpaDashboard from '../images/transpa/Transpa-page-dashboard.png'
 import cryptoExtension from '../images/cryptoextension/btc-Twitter.png'
 import cryptofolio from '../images/cryptofolio/cryptofolio_home-page-view_btc.png'
 import chipsAndCircuitsWeb from '../images/chipsAndCircuits/chipsAndCircuitsWebV3.png'
+import woofiTrackerExtension from '../images/woofiTrackerExtension/woofi-extension-preview_1_1280x800.png'
 import donationWalletTrackerExtension from '../images/donationWalletTrackerExtension/ukraine_extension_screenshot.png'
 import dgameOfLife from '../images/dgameOfLife/Game_of_life_preview.png'
 import aeDao from '../images/aeDao/ae-dao-dashboard.png'
 import ghostTrainer from '../images/ghostTrainer/ghostTrainer.jpg'
+import tweetVoterDapp from '../images/tweetVoterDapp/TO_dashboard_page.png'
 
 import githubLogo from '../images/socialMedia/githubLogo.png'
 import twitterLogo from '../images/socialMedia/twitterLogo.png'
@@ -67,9 +69,11 @@ function Home() {
 		p5.rotateX(1.6)
 		p5.rotateZ(1.7)
 
-		p5.translate(0, 0, -sketchPlacement)
+		// p5.translate(0, 0, -sketchPlacement)
+		p5.translate(0, 0, -sketchPlacement - 30)
 
 		i += 0.003
+
 		p5.background(4, 30, 69)
 
 		let dt = 0.01
@@ -119,7 +123,7 @@ function Home() {
 						</p>
 					</div>
 				</div>
-				<div id="aboutMe" className="container flex-wrap-between bgc-100 ">
+				{/* <div id="aboutMe" className="container flex-wrap-between bgc-100 ">
 					<div className="container-element">
 						<h1>About</h1>
 						<p>
@@ -181,17 +185,29 @@ function Home() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
-				<div id="myWorks" className="container flex-wrap-between bgc-900 ">
+				<div id="myWorks" className="container flex-wrap-between">
 					<div className="container-element flex-center">
 						<Card
 							title="Crypto Explorer Extension"
-							text="A Google Chrome extension which displays information about a cryptocurrency in a popup when the user selects a coin ticker
-						(BTC/ ETH) and presses the shortkeys or uses the searchbar."
+							text="A Google Chrome extension which displays information about a cryptocurrency in a popup when the user selects a coin ticker (BTC/ ETH) and presses the shortkeys. Check the top trending coins of CoinGecko in the last 24 hours and compare Marketcaps."
 							stacks="Typescript, React, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/crypto-explorer-extension"
 							background={cryptoExtension}
+						/>
+					</div>
+					<div className="container-element flex-center">
+						<Card
+							title="WOOFi APY Tracker Extension"
+							text="Display general WOO Network info and APY's of WOOFi Earn pairs. Unfoldable yield calculator included too.
+							
+
+
+							"
+							stacks="Typescript, React, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/WOOFi-APY-Tracker-Extension"
+							background={woofiTrackerExtension}
 						/>
 					</div>
 
@@ -204,6 +220,16 @@ function Home() {
 							background={dgameOfLife}
 						/>
 					</div>
+					<div className="container-element flex-center">
+						<Card
+							title="Tweet Voter dApp"
+							text="A project to practice Solidity smartcontract development. Web3 platform to share and view valuable Tweets."
+							stacks="Javascript, Solidity, React, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/tweet-voter-dapp"
+							background={tweetVoterDapp}
+						/>
+					</div>
+
 					<div className="container-element flex-center">
 						<Card
 							title="Donation Wallet Tracker Extension"
