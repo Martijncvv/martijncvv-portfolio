@@ -14,6 +14,7 @@ import dgameOfLife from '../images/dgameOfLife/Game_of_life_preview.png'
 import aeDao from '../images/aeDao/ae-dao-dashboard.png'
 import ghostTrainer from '../images/ghostTrainer/ghostTrainer.jpg'
 import tweetVoterDapp from '../images/tweetVoterDapp/TO_dashboard_page.png'
+import schengenVisaCalculator from '../images/schengenVisaCalculator/schengen-visa-calculator-preview.png'
 
 import githubLogo from '../images/socialMedia/githubLogo.png'
 import twitterLogo from '../images/socialMedia/twitterLogo.png'
@@ -200,7 +201,7 @@ function Home() {
 					<div className="container-element flex-center">
 						<Card
 							title="WOOFi APY Tracker Extension"
-							text="Display general WOO Network info and APY's of WOOFi Earn pairs. Unfoldable yield calculator included too.
+							text="Display general WOO Network info, on-chain txs and APY's of WOOFi Earn pairs. Unfoldable yield calculator included too.
 							
 
 
@@ -208,6 +209,19 @@ function Home() {
 							stacks="Typescript, React, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/WOOFi-APY-Tracker-Extension"
 							background={woofiTrackerExtension}
+						/>
+					</div>
+					<div className="container-element flex-center">
+						<Card
+							title="Schengen Visa Calculator"
+							text="Calculator to check how many days you can still stay in the Schengen area.
+							
+
+
+							"
+							stacks="Javascript, React, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/schengen-visa-calculator"
+							background={schengenVisaCalculator}
 						/>
 					</div>
 
@@ -220,6 +234,19 @@ function Home() {
 							background={dgameOfLife}
 						/>
 					</div>
+
+					<div className="container-element flex-center">
+						<Card
+							title="Cryptofolio"
+							text="A cryptocurrency portfolio tracker that shows price
+						data, social media data and has the functionality to explore
+						new investment opportunities within the industry."
+							stacks="Python, Django, Javascript, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/cryptocurrency_portfolio_project"
+							background={cryptofolio}
+						/>
+					</div>
+
 					<div className="container-element flex-center">
 						<Card
 							title="Tweet Voter dApp"
@@ -237,28 +264,6 @@ function Home() {
 							stacks="Typescript, React, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/ukraine_donation_wallet_tracker"
 							background={donationWalletTrackerExtension}
-						/>
-					</div>
-
-					<div className="container-element flex-center">
-						<Card
-							title="AE DAO"
-							text="Decentralized Autonomous Organisation project made for a whatsapp group chat. Mint an NFT to become part of the DAO. Propose transfers from the DAO treasury to reward holders."
-							stacks="Javascript, Solidity, React, HTML, CSS"
-							GHLink="https://github.com/Martijncvv/ae-dao"
-							background={aeDao}
-						/>
-					</div>
-
-					<div className="container-element flex-center">
-						<Card
-							title="Cryptofolio"
-							text="A cryptocurrency portfolio tracker that shows price
-						data, social media data and has the functionality to explore
-						new investment opportunities within the industry."
-							stacks="Python, Django, Javascript, HTML, CSS"
-							GHLink="https://github.com/Martijncvv/cryptocurrency_portfolio_project"
-							background={cryptofolio}
 						/>
 					</div>
 
@@ -292,6 +297,16 @@ function Home() {
 							stacks="Javascript, React, Redux, Sequalize, HTML, CSS"
 							GHLink="https://github.com/Martijncvv/transpa_frontend"
 							background={transpaDashboard}
+						/>
+					</div>
+
+					<div className="container-element flex-center">
+						<Card
+							title="AE DAO"
+							text="Decentralized Autonomous Organisation project made for a whatsapp group chat. Mint an NFT to become part of the DAO. Propose transfers from the DAO treasury to reward holders."
+							stacks="Javascript, Solidity, React, HTML, CSS"
+							GHLink="https://github.com/Martijncvv/ae-dao"
+							background={aeDao}
 						/>
 					</div>
 				</div>
